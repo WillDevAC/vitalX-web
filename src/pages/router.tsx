@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 import PresselPage from "./pressel";
 
@@ -21,19 +21,19 @@ const RouterController: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" Component={PresselPage} />
-        <Route path="/step1" Component={Step1Page} />
-        <Route path="/step2" Component={Step2Page} />
-        <Route path="/step3" Component={Step3Page} />
-        <Route path="/step4" Component={Step4Page} />
-        <Route path="/step5" Component={Step5Page} />
-        <Route path="/step6" Component={Step6Page} />
-        <Route path="/step7" Component={Step7Page} />
-        <Route path="/step8" Component={Step8Page} />
-        <Route path="/step9" Component={Step9Page} />
-        <Route path="/step10" Component={Step10Page} />
-        <Route path="/step11" Component={Step11Page} />
-        <Route path="/step12" Component={Step12Page} />
+        <Route path="/" element={<PresselPage/>} />
+        <Route path="/step1" element={<Step1Page/>} />
+        <Route path="/step2" element={<Step2Page/>} />
+        <Route path="/step3" element={<Step3Page/>} />
+        <Route path="/step4" element={<Step4Page/>} />
+        <Route path="/step5" element={<Step5Page/>} />
+        <Route path="/step6" element={<Step6Page/>} />
+        <Route path="/step7" element={<Step7Page/>} />
+        <Route path="/step8" element={<Step8Page/>} />
+        <Route path="/step9" element={<Step9Page/>} />
+        <Route path="/step10" element={<Step10Page/>} />
+        <Route path="/step11" element={<Step11Page/>} />
+        <Route path="/step12" element={<Step12Page/>} />
       </Routes>
     </BrowserRouter>
   );
