@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import PresselPage from "./pressel";
 
