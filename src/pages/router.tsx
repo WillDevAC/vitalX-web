@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import PresselPage from "./pressel";
 
@@ -20,21 +20,21 @@ import Step12Page from "./step12";
 const RouterController: React.FC = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<PresselPage/>} />
-        <Route path="/step1" element={<Step1Page/>} />
-        <Route path="/step2" element={<Step2Page/>} />
-        <Route path="/step3" element={<Step3Page/>} />
-        <Route path="/step4" element={<Step4Page/>} />
-        <Route path="/step5" element={<Step5Page/>} />
-        <Route path="/step6" element={<Step6Page/>} />
-        <Route path="/step7" element={<Step7Page/>} />
-        <Route path="/step8" element={<Step8Page/>} />
-        <Route path="/step9" element={<Step9Page/>} />
-        <Route path="/step10" element={<Step10Page/>} />
-        <Route path="/step11" element={<Step11Page/>} />
-        <Route path="/step12" element={<Step12Page/>} />
-      </Routes>
+      <Switch>
+        <Route path="/" exact component={() => <PresselPage />} />
+        <Route path="/step1" exact component={() => <Step1Page />} />
+        <Route path="/step2" exact component={() => <Step2Page />} />
+        <Route path="/step3" exact component={() => <Step3Page />} />
+        <Route path="/step4" exact component={() => <Step4Page />} />
+        <Route path="/step5" exact component={() => <Step5Page />} />
+        <Route path="/step6" exact component={() => <Step6Page />} />
+        <Route path="/step7" exact component={() => <Step7Page />} />
+        <Route path="/step8" exact component={() => <Step8Page />} />
+        <Route path="/step9" exact component={() => <Step9Page />} />
+        <Route path="/step10" exact component={() => <Step10Page />} />
+        <Route path="/step11" exact component={() => <Step11Page />} />
+        <Route path="/step12" exact component={() => <Step12Page />} />
+      </Switch>
     </BrowserRouter>
   );
 };

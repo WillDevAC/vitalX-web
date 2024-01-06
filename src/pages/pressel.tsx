@@ -1,11 +1,10 @@
 import React from "react";
 
 import LayoutFragment from "../layout";
-
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const PresselPage: React.FC = () => {
-  const navigate = useNavigate();
+  const history = useHistory();
 
   return (
     <LayoutFragment type="normal" page="0" desc='#'>
@@ -19,7 +18,7 @@ const PresselPage: React.FC = () => {
         <img src="pressel.png" alt="Pressel Avatar" />
         <button
           className="mt-16 flex items-center justify-center bg-blue-700 text-white w-80 h-14 font-semibold rounded-lg"
-          onClick={() => navigate("/step1")}
+          onClick={() => history.push("/step1")}
         >
           CONTINUAR
         </button>

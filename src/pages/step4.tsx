@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LayoutFragment from "../layout";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Step4Page: React.FC = () => {
   const [selectedButtons, setSelectedButtons] = useState<string[]>([]);
@@ -17,7 +17,7 @@ const Step4Page: React.FC = () => {
     return selectedButtons.includes(buttonText);
   };
 
-  const navigate = useNavigate();
+  const history = useHistory();
 
   return (
     <LayoutFragment type="first" page="5/26" desc="METAS">
@@ -65,7 +65,7 @@ const Step4Page: React.FC = () => {
             selectedButtons.length === 0 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={selectedButtons.length === 0}
-          onClick={() => navigate('/step5')}
+          onClick={() => history.push('/step5')}
         >
           CONTINUAR
         </button>

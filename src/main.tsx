@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import RouterController from "./pages/router.tsx";
+
 import "./global.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")!).render(<RouterController />);
