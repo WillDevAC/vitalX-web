@@ -19,7 +19,7 @@ import Step12Page from "./step12";
 
 const RouterController: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="app">
       <Switch>
         <Route path="/" exact component={() => <PresselPage />} />
         <Route path="/step1" exact component={() => <Step1Page />} />
