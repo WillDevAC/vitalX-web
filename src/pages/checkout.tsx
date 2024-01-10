@@ -5,15 +5,12 @@ import { useHistory } from "react-router-dom";
 
 const CheckoutPage: React.FC = () => {
   const [email, setEmail] = useState("");
-  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
 
   const history = useHistory();
 
   useEffect(() => {
     const storedEmail = localStorage.getItem("email") || "";
     setEmail(storedEmail);
-
-    setIsButtonEnabled(storedEmail.trim() !== "");
   }, []);
 
   const handleContinueClick = () => {
@@ -21,6 +18,11 @@ const CheckoutPage: React.FC = () => {
     const userWeight = localStorage.getItem("peso") || "";
     const objetivo = localStorage.getItem("objetivo") || "";
     const idade = localStorage.getItem("idade") || "";
+
+    if(email === ''){
+      alert('Preencha o campo de email!');
+      return;
+    }
 
     sendEmailToSupport(email, userHeight, userWeight, objetivo, idade);
   };
@@ -57,7 +59,7 @@ const CheckoutPage: React.FC = () => {
         alert('Falha, tente novamente mais tarde.')
       }
     } catch (error) {
-      console.error("Erro ao enviar o email:", error);
+      alert('Erro ao enviar o email!');
     }
   };
 
@@ -85,11 +87,7 @@ const CheckoutPage: React.FC = () => {
       <div className="m-5">
         <button
           onClick={handleContinueClick}
-          className={`flex mt-10 gap-3 items-center justify-center text-lg text-white font-bold bg-zinc-800 p-5 w-full rounded-lg h-20 ${
-            isButtonEnabled ? "" : "opacity-50 cursor-not-allowed"
-          }`}
-          disabled={!isButtonEnabled} 
-        >
+          className={'flex mt-10 gap-3 items-center justify-center text-lg text-white font-bold bg-zinc-800 p-5 w-full rounded-lg h-20'}>
           CONTINUAR
         </button>
       </div>
