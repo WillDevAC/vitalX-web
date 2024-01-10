@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import LayoutFragment from "../layout";
 import { Info } from "lucide-react";
-import { useHistory } from "react-router-dom";
 
 const FinishPage: React.FC = () => {
   const objetivo = localStorage.getItem("objetivo");
 
   const [planoSelecionado, setPlanoSelecionado] = useState("");
-
-  const history = useHistory();
 
   const handleReceberPlano = () => {
     
