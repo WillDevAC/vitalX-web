@@ -22,7 +22,7 @@ const Step1Page: React.FC = () => {
           Ganho de massa
         </button>
         <button className="flex justify-between  items-center text-lg text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-20" onClick={() => handleButton('Perca de peso')}>
-          Perca de peso
+          Perda de peso
         </button>
         <button className="flex justify-between  items-center text-lg text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-20" onClick={() => handleButton('Qualidade de vida')}>
           Qualidade de vida

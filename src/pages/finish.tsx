@@ -8,60 +8,58 @@ const FinishPage: React.FC = () => {
   const [planoSelecionado, setPlanoSelecionado] = useState("");
 
   const handleReceberPlano = () => {
-    
-    if(planoSelecionado === '') {
-      alert('Selecione um plano para continuar!');
+    if (planoSelecionado === "") {
+      alert("Selecione um plano para continuar!");
       return;
     }
 
     //Perda de peso
-    if(planoSelecionado === 'pdp1m') {
-      window.location.href = 'https://payment.ticto.app/OC172C851';
+    if (planoSelecionado === "pdp1m") {
+      window.location.href = "https://payment.ticto.app/OC172C851";
       return;
     }
 
-    if(planoSelecionado === 'pdp3m') {
-      window.location.href = ('https://payment.ticto.app/O4856D67D');
+    if (planoSelecionado === "pdp3m") {
+      window.location.href = "https://payment.ticto.app/O4856D67D";
       return;
     }
 
-    if(planoSelecionado === 'pdp6m') {
-      window.location.href = ('https://payment.ticto.app/O4F3B1264');
+    if (planoSelecionado === "pdp6m") {
+      window.location.href = "https://payment.ticto.app/O4F3B1264";
       return;
     }
 
     //Ganho de massa
-    if(planoSelecionado === 'gdm1m') {
-      window.location.href = ('https://payment.ticto.app/OE2EA5940');
+    if (planoSelecionado === "gdm1m") {
+      window.location.href = "https://payment.ticto.app/OE2EA5940";
       return;
     }
 
-    if(planoSelecionado === 'gdm3m') {
-      window.location.href = ('https://payment.ticto.app/OA902D051');
+    if (planoSelecionado === "gdm3m") {
+      window.location.href = "https://payment.ticto.app/OA902D051";
       return;
     }
 
-    if(planoSelecionado === 'gdm6m') {
-      window.location.href = ('https://payment.ticto.app/OC073159F');
+    if (planoSelecionado === "gdm6m") {
+      window.location.href = "https://payment.ticto.app/OC073159F";
       return;
     }
 
     //Qualidade de vida
-    if(planoSelecionado === 'qdv1m') {
-      window.location.href = ('https://payment.ticto.app/O994C013F');
+    if (planoSelecionado === "qdv1m") {
+      window.location.href = "https://payment.ticto.app/O994C013F";
       return;
     }
 
-    if(planoSelecionado === 'qdv3m') {
-      window.location.href = ('https://payment.ticto.app/O4CBA6318');
+    if (planoSelecionado === "qdv3m") {
+      window.location.href = "https://payment.ticto.app/O4CBA6318";
       return;
     }
 
-    if(planoSelecionado === 'qdv6m') {
-      window.location.href = ('https://payment.ticto.app/O4A7AEA9D');
+    if (planoSelecionado === "qdv6m") {
+      window.location.href = "https://payment.ticto.app/O4A7AEA9D";
       return;
     }
-
   };
 
   return (
@@ -74,8 +72,10 @@ const FinishPage: React.FC = () => {
         {objetivo === "Perca de peso" && (
           <>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "pdp1m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "pdp1m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("pdp1m")}
             >
@@ -85,10 +85,20 @@ const FinishPage: React.FC = () => {
                   6x de R$ 6,44
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1  font-bold rounded-lg ${
+                  planoSelecionado === "pdp1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,32 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "pdp1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MAIS POPULAR
               </div>
             </button>
@@ -104,16 +114,28 @@ const FinishPage: React.FC = () => {
                   12x de R$ R$ 10,03
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "pdp3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,82 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "pdp3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MELHOR OFERTA
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "pdp6m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "pdp6m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("pdp6m")}
             >
@@ -123,7 +145,11 @@ const FinishPage: React.FC = () => {
                   12x de R$ 18,06
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "pdp6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 1,65 <b className="text-xs">dia</b>
               </div>
             </button>
@@ -133,8 +159,10 @@ const FinishPage: React.FC = () => {
         {objetivo === "Ganho de massa" && (
           <>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "gdm1m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "gdm1m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("gdm1m")}
             >
@@ -144,16 +172,28 @@ const FinishPage: React.FC = () => {
                   6x de R$ 6,44
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "gdm1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,32 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "gdm1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MAIS POPULAR
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "gdm3m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "gdm3m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("gdm3m")}
             >
@@ -163,16 +203,28 @@ const FinishPage: React.FC = () => {
                   12x de R$ R$ 10,03
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "gdm3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,82 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "gdm3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MELHOR OFERTA
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "gdm6m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "gdm6m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("gdm6m")}
             >
@@ -182,7 +234,11 @@ const FinishPage: React.FC = () => {
                   12x de R$ 18,06
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "gdm6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 1,65 <b className="text-xs">dia</b>
               </div>
             </button>
@@ -192,8 +248,10 @@ const FinishPage: React.FC = () => {
         {objetivo === "Qualidade de vida" && (
           <>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "qdv1m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "qdv1m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("qdv1m")}
             >
@@ -203,16 +261,28 @@ const FinishPage: React.FC = () => {
                   6x de R$ 6,44
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "qdv1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,32 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "qdv1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MAIS POPULAR
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "qdv3m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "qdv3m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("qdv3m")}
             >
@@ -222,16 +292,28 @@ const FinishPage: React.FC = () => {
                   12x de R$ R$ 10,03
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "qdv3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,82 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "qdv3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MELHOR OFERTA
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "qdv6m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "qdv6m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("qdv6m")}
             >
@@ -241,7 +323,11 @@ const FinishPage: React.FC = () => {
                   12x de R$ 18,06
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "qdv6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 1,65 <b className="text-xs">dia</b>
               </div>
             </button>
@@ -412,8 +498,10 @@ const FinishPage: React.FC = () => {
         {objetivo === "Perca de peso" && (
           <>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "pdp1m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "pdp1m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("pdp1m")}
             >
@@ -423,10 +511,20 @@ const FinishPage: React.FC = () => {
                   6x de R$ 6,44
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1  font-bold rounded-lg ${
+                  planoSelecionado === "pdp1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,32 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "pdp1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MAIS POPULAR
               </div>
             </button>
@@ -442,16 +540,28 @@ const FinishPage: React.FC = () => {
                   12x de R$ R$ 10,03
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "pdp3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,82 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "pdp3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MELHOR OFERTA
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "pdp6m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "pdp6m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("pdp6m")}
             >
@@ -461,7 +571,11 @@ const FinishPage: React.FC = () => {
                   12x de R$ 18,06
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "pdp6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 1,65 <b className="text-xs">dia</b>
               </div>
             </button>
@@ -471,8 +585,10 @@ const FinishPage: React.FC = () => {
         {objetivo === "Ganho de massa" && (
           <>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "gdm1m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "gdm1m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("gdm1m")}
             >
@@ -482,16 +598,28 @@ const FinishPage: React.FC = () => {
                   6x de R$ 6,44
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "gdm1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,32 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "gdm1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MAIS POPULAR
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "gdm3m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "gdm3m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("gdm3m")}
             >
@@ -501,16 +629,28 @@ const FinishPage: React.FC = () => {
                   12x de R$ R$ 10,03
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "gdm3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,82 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "gdm3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MELHOR OFERTA
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "gdm6m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "gdm6m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("gdm6m")}
             >
@@ -520,7 +660,11 @@ const FinishPage: React.FC = () => {
                   12x de R$ 18,06
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "gdm6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 1,65 <b className="text-xs">dia</b>
               </div>
             </button>
@@ -530,8 +674,10 @@ const FinishPage: React.FC = () => {
         {objetivo === "Qualidade de vida" && (
           <>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "qdv1m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "qdv1m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("qdv1m")}
             >
@@ -541,16 +687,28 @@ const FinishPage: React.FC = () => {
                   6x de R$ 6,44
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "qdv1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,32 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "qdv1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MAIS POPULAR
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "qdv3m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "qdv3m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("qdv3m")}
             >
@@ -560,16 +718,28 @@ const FinishPage: React.FC = () => {
                   12x de R$ R$ 10,03
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "qdv3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 0,82 <b className="text-xs">dia</b>
               </div>
-              <div className="absolute top-0 right-0 flex items-center w-full font-xs justify-center text-[#9a9b9b]  bg-[#5f6061]">
+              <div
+                className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
+                  planoSelecionado === "qdv3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
+                }  bg-[#5f6061]`}
+              >
                 MELHOR OFERTA
               </div>
             </button>
             <button
-              className={`flex items-center justify-between p-5 w-full rounded-md relative border ${
-                planoSelecionado === "qdv6m" ? "border-blue-500" : "bg-zinc-800"
+              className={`flex items-center justify-between p-5 w-full rounded-md relative ${
+                planoSelecionado === "qdv6m"
+                  ? "border-blue-500 border"
+                  : "bg-zinc-800"
               }`}
               onClick={() => setPlanoSelecionado("qdv6m")}
             >
@@ -579,7 +749,11 @@ const FinishPage: React.FC = () => {
                   12x de R$ 18,06
                 </span>
               </div>
-              <div className="text-lg bg-[#5f6061] p-1 text-[#9a9b9b] font-bold rounded-lg">
+              <div
+                className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
+                  planoSelecionado === "qdv6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                }`}
+              >
                 1,65 <b className="text-xs">dia</b>
               </div>
             </button>
