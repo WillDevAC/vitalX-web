@@ -7,7 +7,7 @@ const Step9Page: React.FC = () => {
   const history = useHistory();
 
   return (
-    <LayoutFragment type="first" page="10/26" desc="ESTILO DE VIDA">
+    <LayoutFragment type="first" page="10/16" desc="ESTILO DE VIDA">
       <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
         Como você se sente entre as refeições?
       </h1>
@@ -19,7 +19,7 @@ const Step9Page: React.FC = () => {
           Eu me sinto cansado depois de comer
         </button>
         <button className="flex justify-between  items-center text-lg text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-20" onClick={() => history.push('/step10')}>
-          Eu estou sempre me sentindo energizado
+          Não me sinto cansado depois de refeições
         </button>
       </div>
     </LayoutFragment>

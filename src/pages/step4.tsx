@@ -20,7 +20,7 @@ const Step4Page: React.FC = () => {
   const history = useHistory();
 
   return (
-    <LayoutFragment type="first" page="5/26" desc="METAS">
+    <LayoutFragment type="first" page="5/16S" desc="METAS">
       <h1 className="text-center text-3xl text-gray-50 pr-10 pl-10 font-bold">
         Escolha suas zonas alvos
       </h1>
@@ -28,7 +28,7 @@ const Step4Page: React.FC = () => {
         <img src="zonasalvo.webp" alt="Zonas Alvo" />
         <button
           className={`absolute top-0 left-0 ml-7 p-3 bg-zinc-800 text-white font-medium text-sm rounded-lg ${
-            isButtonSelected("BRAÇOS") ? "bg-blue-600" : ""
+            isButtonSelected("BRAÇOS") ? "bg-blue-400" : ""
           }`}
           onClick={() => handleButtonClick("BRAÇOS")}
         >
@@ -36,7 +36,7 @@ const Step4Page: React.FC = () => {
         </button>
         <button
           className={`absolute top-0 right-0 mr-7 p-3 bg-zinc-800 text-white font-medium text-sm rounded-lg ${
-            isButtonSelected("PEITORAL") ? "bg-blue-600" : ""
+            isButtonSelected("PEITORAL") ? "bg-blue-400" : ""
           }`}
           onClick={() => handleButtonClick("PEITORAL")}
         >
@@ -44,7 +44,7 @@ const Step4Page: React.FC = () => {
         </button>
         <button
           className={`absolute bottom-0 left-0 ml-7 p-3 bg-zinc-800 text-white font-medium text-sm rounded-lg ${
-            isButtonSelected("ABDÔMEM") ? "bg-blue-600" : ""
+            isButtonSelected("ABDÔMEM") ? "bg-blue-400" : ""
           }`}
           onClick={() => handleButtonClick("ABDÔMEM")}
         >
@@ -52,7 +52,7 @@ const Step4Page: React.FC = () => {
         </button>
         <button
           className={`absolute bottom-0 right-0 mr-7 p-3 bg-zinc-800 text-white font-medium text-sm rounded-lg ${
-            isButtonSelected("PERNAS") ? "bg-blue-600" : ""
+            isButtonSelected("PERNAS") ? "bg-blue-400" : ""
           }`}
           onClick={() => handleButtonClick("PERNAS")}
         >

@@ -16,10 +16,16 @@ import Step9Page from "./step9";
 import Step10Page from "./step10";
 import Step11Page from "./step11";
 import Step12Page from "./step12";
+import Step13Page from "./step13";
+import Step14Page from "./step14";
+import Step15Page from "./step15";
+import LoadingPage from "./loading";
+import CheckoutPage from "./checkout";
+import FinishPage from "./finish";
 
 const RouterController: React.FC = () => {
   return (
-    <BrowserRouter basename="app">
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact component={() => <PresselPage />} />
         <Route path="/step1" exact component={() => <Step1Page />} />
@@ -34,6 +40,12 @@ const RouterController: React.FC = () => {
         <Route path="/step10" exact component={() => <Step10Page />} />
         <Route path="/step11" exact component={() => <Step11Page />} />
         <Route path="/step12" exact component={() => <Step12Page />} />
+        <Route path="/step13" exact component={() => <Step13Page />} />
+        <Route path="/step14" exact component={() => <Step14Page />} />
+        <Route path="/step15" exact component={() => <Step15Page />} />
+        <Route path="/loading" exact component={() => <LoadingPage />} />
+        <Route path="/checkout" exact component={() => <CheckoutPage />} />
+        <Route path="/finish" exact component={() => <FinishPage />} />
       </Switch>
     </BrowserRouter>
   );

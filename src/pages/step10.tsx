@@ -7,7 +7,7 @@ const Step10Page: React.FC = () => {
   const history = useHistory();
 
   return (
-    <LayoutFragment type="first" page="11/26" desc="ESTILO DE VIDA">
+    <LayoutFragment type="first" page="11/16" desc="ESTILO DE VIDA">
       <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
         Quantas horas por noite você dorme?
       </h1>

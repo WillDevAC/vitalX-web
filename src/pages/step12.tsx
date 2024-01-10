@@ -7,7 +7,7 @@ const Step12Page: React.FC = () => {
   const history = useHistory();
   
   return (
-    <LayoutFragment type="first" page="3/26" desc="LOCAL">
+    <LayoutFragment type="first" page="13/16" desc="LOCAL">
       <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
         Escolha seu local de treinamento
       </h1>

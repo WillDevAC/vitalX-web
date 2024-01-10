@@ -6,7 +6,7 @@ const Step5Page: React.FC = () => {
   const history = useHistory();
 
   return (
-    <LayoutFragment type="first" page="6/26" desc="NIVEL DE PREPARO FÍSICO">
+    <LayoutFragment type="first" page="6/16" desc="NIVEL DE PREPARO FÍSICO">
       <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
         Quando você teve seu peso ideal pela última vez?
       </h1>
