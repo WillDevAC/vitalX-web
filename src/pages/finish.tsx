@@ -66,7 +66,7 @@ const FinishPage: React.FC = () => {
     <LayoutFragment type="normal" desc="0" page="#">
       <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
         Seu plano de <b className="text-blue-500">treinos personalizados</b>
-        está pronto!
+         está pronto!
       </h1>
       <div className="flex flex-col gap-5 m-10">
         {objetivo === "Perca de peso" && (
@@ -90,7 +90,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "pdp1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,32 <b className="text-xs">dia</b>
+                0,32 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -119,7 +119,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "pdp3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,82 <b className="text-xs">dia</b>
+                0,82 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -150,7 +150,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "pdp6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                1,65 <b className="text-xs">dia</b>
+                1,65 <b className="text-xs">c/dia</b>
               </div>
             </button>
           </>
@@ -177,7 +177,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "gdm1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,32 <b className="text-xs">dia</b>
+                0,32 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -208,7 +208,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "gdm3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,82 <b className="text-xs">dia</b>
+                0,82 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -239,7 +239,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "gdm6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                1,65 <b className="text-xs">dia</b>
+                1,65 <b className="text-xs">c/dia</b>
               </div>
             </button>
           </>
@@ -266,7 +266,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "qdv1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,32 <b className="text-xs">dia</b>
+                0,32 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -297,7 +297,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "qdv3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,82 <b className="text-xs">dia</b>
+                0,82 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -328,7 +328,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "qdv6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                1,65 <b className="text-xs">dia</b>
+                1,65 <b className="text-xs">c/dia</b>
               </div>
             </button>
           </>
@@ -516,7 +516,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "pdp1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,32 <b className="text-xs">dia</b>
+                0,32 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -545,7 +545,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "pdp3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,82 <b className="text-xs">dia</b>
+                0,82 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -576,7 +576,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "pdp6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                1,65 <b className="text-xs">dia</b>
+                1,65 <b className="text-xs">c/dia</b>
               </div>
             </button>
           </>
@@ -603,7 +603,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "gdm1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,32 <b className="text-xs">dia</b>
+                0,32 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -634,7 +634,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "gdm3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,82 <b className="text-xs">dia</b>
+                0,82 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -665,7 +665,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "gdm6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                1,65 <b className="text-xs">dia</b>
+                1,65 <b className="text-xs">c/dia</b>
               </div>
             </button>
           </>
@@ -692,7 +692,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "qdv1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,32 <b className="text-xs">dia</b>
+                0,32 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -723,7 +723,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "qdv3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                0,82 <b className="text-xs">dia</b>
+                0,82 <b className="text-xs">c/dia</b>
               </div>
               <div
                 className={`absolute top-0 right-0 flex items-center w-full font-xs justify-center ${
@@ -754,7 +754,7 @@ const FinishPage: React.FC = () => {
                   planoSelecionado === "qdv6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
                 }`}
               >
-                1,65 <b className="text-xs">dia</b>
+                1,65 <b className="text-xs">c/dia</b>
               </div>
             </button>
           </>

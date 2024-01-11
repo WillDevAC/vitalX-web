@@ -14,15 +14,15 @@ const Step6Page: React.FC = () => {
       <div className="flex flex-col items-center pt-5 gap-5 w-full p-7">
         <button className="flex flex-col text-lg gap-2 text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-24" onClick={() => history.push('/step7')}>
           Iniciante
-          <span className="text-sm text-zinc-400">Começei a treinar a pouco tempo</span>
+          <span className="text-sm text-zinc-400">Começei a treinar há pouco tempo</span>
         </button>
         <button className="flex flex-col text-lg gap-2 text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-24" onClick={() => history.push('/step7')}>
           Intermediário
-          <span className="text-sm text-zinc-400">Treino regurlamente, 2 a 3x por semana</span>
+          <span className="text-sm text-zinc-400">Treino regurlamente 2 a 3x por semana</span>
         </button>
         <button className="flex flex-col text-lg gap-2 text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-24" onClick={() => history.push('/step7')}>
           Avançado
-          <span className="text-sm text-zinc-400">Treino todos os dias, 4 a 6x por semana</span>
+          <span className="text-sm text-zinc-400">Treino todos os dias 4 a 6x por semana</span>
         </button>
         <button className="flex flex-col text-lg gap-2 text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-24" onClick={() => history.push('/step7')}>
           Não treino

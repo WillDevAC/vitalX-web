@@ -21,13 +21,13 @@ const Step11Page: React.FC = () => {
           className="flex justify-between  items-center text-lg text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-20"
           onClick={() => history.push("/step12")}
         >
-          Entre 1 litro e 1.5 litros
+          Entre 1 litro e 2 litros
         </button>
         <button
           className="flex justify-between  items-center text-lg text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-20"
           onClick={() => history.push("/step12")}
         >
-          Entre 1.5 litros à 3 litros
+          Entre 2 litros à 3 litros
         </button>
         <button
           className="flex justify-between  items-center text-lg text-white font-medium bg-zinc-800 p-5 w-full rounded-lg h-20"
