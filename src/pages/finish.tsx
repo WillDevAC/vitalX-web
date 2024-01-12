@@ -64,7 +64,7 @@ const FinishPage: React.FC = () => {
 
   return (
     <LayoutFragment type="normal" desc="0" page="#">
-      <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
+      <h1 className="flex items-center gap-1 text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
         Seu plano de <b className="text-blue-500">treinos personalizados</b>
          está pronto!
       </h1>
@@ -109,7 +109,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("pdp3m")}
             >
               <div className="flex flex-col gap-2 mt-5">
-                <p className="text-white font-bold">PLANO DE 3 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 3 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ R$ 10,03
                 </span>
@@ -140,7 +140,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("pdp6m")}
             >
               <div className="flex flex-col gap-2">
-                <p className="text-white font-bold">PLANO DE 6 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 6 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ 18,06
                 </span>
@@ -198,7 +198,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("gdm3m")}
             >
               <div className="flex flex-col gap-2 mt-5">
-                <p className="text-white font-bold">PLANO DE 3 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 3 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ R$ 10,03
                 </span>
@@ -229,7 +229,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("gdm6m")}
             >
               <div className="flex flex-col gap-2">
-                <p className="text-white font-bold">PLANO DE 6 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 6 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ 18,06
                 </span>
@@ -287,7 +287,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("qdv3m")}
             >
               <div className="flex flex-col gap-2 mt-5">
-                <p className="text-white font-bold">PLANO DE 3 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 3 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ R$ 10,03
                 </span>
@@ -318,7 +318,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("qdv6m")}
             >
               <div className="flex flex-col gap-2">
-                <p className="text-white font-bold">PLANO DE 6 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 6 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ 18,06
                 </span>
@@ -535,7 +535,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("pdp3m")}
             >
               <div className="flex flex-col gap-2 mt-5">
-                <p className="text-white font-bold">PLANO DE 3 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 3 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ R$ 10,03
                 </span>
@@ -566,7 +566,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("pdp6m")}
             >
               <div className="flex flex-col gap-2">
-                <p className="text-white font-bold">PLANO DE 6 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 6 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ 18,06
                 </span>
@@ -624,7 +624,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("gdm3m")}
             >
               <div className="flex flex-col gap-2 mt-5">
-                <p className="text-white font-bold">PLANO DE 3 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 3 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ R$ 10,03
                 </span>
@@ -655,7 +655,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("gdm6m")}
             >
               <div className="flex flex-col gap-2">
-                <p className="text-white font-bold">PLANO DE 6 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 6 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ 18,06
                 </span>
@@ -713,7 +713,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("qdv3m")}
             >
               <div className="flex flex-col gap-2 mt-5">
-                <p className="text-white font-bold">PLANO DE 3 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 3 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ R$ 10,03
                 </span>
@@ -744,7 +744,7 @@ const FinishPage: React.FC = () => {
               onClick={() => setPlanoSelecionado("qdv6m")}
             >
               <div className="flex flex-col gap-2">
-                <p className="text-white font-bold">PLANO DE 6 MÊSES</p>
+                <p className="text-white font-bold">PLANO DE 6 MESES</p>
                 <span className="flex text-gray-100 font-semibold text-xs">
                   12x de R$ 18,06
                 </span>
