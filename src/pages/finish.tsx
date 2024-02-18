@@ -64,11 +64,13 @@ const FinishPage: React.FC = () => {
 
   return (
     <LayoutFragment type="normal" desc="0" page="#">
-      <h1 className="flex items-center gap-1 text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
-        Seu plano de <b className="text-blue-500">treinos personalizados</b>
-         está pronto!
+      <h1 className="flex items-center gap-1 justify-center text-xl text-white font-bold">
+        Seu <b className="text-blue-500">plano de treinos</b> está pronto!
       </h1>
       <div className="flex flex-col gap-5 m-10">
+        <span className="text-white font-medium text-md">
+          Selecione seu plano:{" "}
+        </span>
         {objetivo === "Perca de peso" && (
           <>
             <button
@@ -87,7 +89,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1  font-bold rounded-lg ${
-                  planoSelecionado === "pdp1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "pdp1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,32 <b className="text-xs">c/dia</b>
@@ -116,7 +120,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "pdp3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "pdp3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,82 <b className="text-xs">c/dia</b>
@@ -147,7 +153,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "pdp6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "pdp6m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 1,65 <b className="text-xs">c/dia</b>
@@ -174,7 +182,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "gdm1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "gdm1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,32 <b className="text-xs">c/dia</b>
@@ -205,7 +215,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "gdm3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "gdm3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,82 <b className="text-xs">c/dia</b>
@@ -236,7 +248,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "gdm6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "gdm6m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 1,65 <b className="text-xs">c/dia</b>
@@ -263,7 +277,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "qdv1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "qdv1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,32 <b className="text-xs">c/dia</b>
@@ -294,7 +310,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "qdv3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "qdv3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,82 <b className="text-xs">c/dia</b>
@@ -325,7 +343,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "qdv6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "qdv6m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 1,65 <b className="text-xs">c/dia</b>
@@ -495,6 +515,9 @@ const FinishPage: React.FC = () => {
         <h1 className="text-center text-2xl text-gray-50 pr-10 pl-10 font-bold">
           Tenha resultados visiveis em 4 semanas
         </h1>
+        <span className="text-white font-medium text-md">
+          Selecione seu plano:{" "}
+        </span>
         {objetivo === "Perca de peso" && (
           <>
             <button
@@ -513,7 +536,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1  font-bold rounded-lg ${
-                  planoSelecionado === "pdp1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "pdp1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,32 <b className="text-xs">c/dia</b>
@@ -542,7 +567,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "pdp3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "pdp3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,82 <b className="text-xs">c/dia</b>
@@ -573,7 +600,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "pdp6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "pdp6m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 1,65 <b className="text-xs">c/dia</b>
@@ -600,7 +629,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "gdm1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "gdm1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,32 <b className="text-xs">c/dia</b>
@@ -631,7 +662,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "gdm3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "gdm3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,82 <b className="text-xs">c/dia</b>
@@ -662,7 +695,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "gdm6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "gdm6m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 1,65 <b className="text-xs">c/dia</b>
@@ -689,7 +724,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "qdv1m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "qdv1m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,32 <b className="text-xs">c/dia</b>
@@ -720,7 +757,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "qdv3m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "qdv3m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 0,82 <b className="text-xs">c/dia</b>
@@ -751,7 +790,9 @@ const FinishPage: React.FC = () => {
               </div>
               <div
                 className={`text-lg bg-[#5f6061] p-1 font-bold rounded-lg ${
-                  planoSelecionado === "qdv6m" ? "bg-blue-500 text-white" : "text-[#9a9b9b]"
+                  planoSelecionado === "qdv6m"
+                    ? "bg-blue-500 text-white"
+                    : "text-[#9a9b9b]"
                 }`}
               >
                 1,65 <b className="text-xs">c/dia</b>
