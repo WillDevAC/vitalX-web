@@ -25,7 +25,7 @@ import FinishPage from "./finish";
 
 const RouterController: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/carol">
       <Switch>
         <Route path="/" exact component={() => <PresselPage />} />
         <Route path="/step1" exact component={() => <Step1Page />} />
